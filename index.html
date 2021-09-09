@@ -1,78 +1,263 @@
 <!DOCTYPE html>
 
 <html lang="pt-br">
-    <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width">
-        <title>Currículo RHT</title>
-        <link rel="stylesheet"  type="text/css" href="./Css/reset.css">
-        <link rel="stylesheet"  type="text/css" href="./Css/style.css"> 
-    </head>
 
-    <body>
-        <header>           
-            <h1 class="logo"><a href="https://github.com/RodrigoHisashi" target="_blank">Rodrigo Hisashi</a></h1>
-            <div class="caixa">
-                <nav>
-                   
-                    <ul class="navegacao">
-                        <li><a href="#contato">Sobre</a></li>
-                        <li><a href="#formacao">Formação</a></li>
-                        <li><a href="#habilidades">Habilidades</a></li>
-                        <li><a href="#experiencias">Experiências</a></li>
-                        <li><a href="#contato">Contato</a></li>
-                        <link rel="preconnect" href="https://fonts.gstatic.com">
-                        <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Currículo RHT</title>
+    <!-- Bootstrap -->
+    <link rel="stylesheet" href="./css/bootstrap.min.css">
+
+    <!-- FONT awesome icons-->
+
+    <link rel="stylesheet" href="./css/all.min.css">
+
+    <!-- CSS style -->
+    <link rel="stylesheet" href="./css/style.css">
+</head>
+
+<body onload="showBirthday()">
+
+    <!-- Header Area -->
+    <header class="header_area">
+        <nav class="navbar navbar-expand-lg navbar-light">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="#"><img src="./img/RHT Logotipo.png" alt="RHT logo"></a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                    aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <div class="me-auto"></div>
+                    <ul class="navbar-nav">
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="#">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#sobre-area">Sobre</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#habilidade-area">Habilidades</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#experiencia-area">Experiências</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#contato">Contato</a>
+                        </li>
+
                     </ul>
-                </nav>
+                </div>
             </div>
-        </header>
-        <main>
-            <div class="foto">
-                <img class="rht-foto"  src="./img/rht.jpeg">
+        </nav>
+    </header>
+    <!-- End Header area -->
+
+    <!-- Start Main area-->
+
+    <main class="site-main">
+
+        <!-- Start Banner area -->
+        <section class="site-banner">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-6 col-md-12 site-title">
+                        <h3 class="title-text">Hello World!</h3>
+                        <h1 class="title-text text-uppercase">Rodrigo Hisashi Takeuti</h1>
+                        <h4 class="title-text text-uppercase">Estudante em Ciências da Computação</h4>
+                        <div class="site-buttons">
+                            <div class="d-flex flex-row flex-wrap">
+                                <a href="#contato"><button type="button" class="btn button primary-button mr-4 text-uppercase" id="bttp">
+                                    Contato</button></a>
+                
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-6 col-md-12 banner-image">
+                        <img src="./img/rht.jpg" alt="banner-img" class="img-fluid" id="foto-rht" width=50%>
+                    </div>
+                </div>
             </div>
-            
-            <section class="sobre" id="sobre">
-                <h2 class="titulos">Sobre</h2>
-                <p>Olá ! Me chamo Rodrigo Hisashi, tenho 20 anos e desde que cursei uma matéria sobre programação em python no ano passado, me interessei cada vez <br>
-                    mais por essa área. Atualmente estou no curso Bacharelado em Ciências e Tecnologia, e estudando também cursos a parte sobre programação.</p>
-            </section> 
+        </section>
 
-            <section class="formacao" id="formacao">
-                <h2 class="titulos">Formação</h2>
-                <p>Cursando Bacharelado em Ciências e Tecnologia na UFABC (2019 - atual)</p>
-            </section> 
+        <!-- End Banner area -->
 
-            <section class="habilidades" id="habilidades">
-                <h2 class="titulos">Habilidades</h2>
-                <ul class="lista-habilidades">
-                    <li class="itens">HTML / CSS / JavaScript</li>
-                    <li class="itens">C / C++</li>
-                    <li class="itens">Java</li>
-                    <li class="itens">Python </li>
-                    <li class="itens">Inglês</li>
-                </ul>
-            </section>
+        <!-- Start sobre area-->
 
-            <section class="experiencias" id="experiencias">
-                <h2 class="titulos">Experiências</h2>
-                <p>No momento não tive nenhuma experiência no mercado, mas estou buscando por isso !</p>
-            </section>
+        <section class="sobre-area" id="sobre-area">
+            <div class="container-fluid">
+                <div class="row">
+                    <div class="col-lg-6 col-md-12">
+                        <div class="sobre-image">
+                            <img src="./img/programmer.png" alt="sobre" class="img-fluid">
+                        </div>
+                    </div>
+                    <div class="col-lg-6 col-md-12 sobre-titulo">
+                        <h2 class="text-uppercase pt-5">
+                            <span>Sobre... </span>
+                        </h2>
+                        <div class="paragraph py-4 w-75"></div>
+                        <p class="para">
+                            Olá ! Me chamo Rodrigo Hisashi, tenho <span class="birthday" data-year="2000" data-month="6"
+                                data-day="5"></span> e desde que cursei uma matéria sobre
+                            programação em python em 2020, me interessei cada vez
+                            mais por essa área.
+                        </p>
+                        <p class="para"> Atualmente estou cursando Bacharelado em Ciências e Tecnologia na UFABC (2019 -
+                            atual), e
+                            estudando também cursos a parte sobre programação.</p>
 
-            <section class="contato" id="contato">
-                <h2 class="titulos">Contato</h2>
-                <p>E-mail: rodrigohisa@gmail.com</p>
-                <p> <a id="linkedin" href="https://www.linkedin.com/in/rodrigo-hisashi-takeuti-29a900193/" target="_blank">Linkedin</a></p>
+                        <a href="https://github.com/rodrigohisashi" target="_blank"><button type="button"
+                                class="btn button primary-button text-uppercase">Projetos GitHub</button></a>
+                    </div>
 
-            </section>
+                </div>
+            </div>
+        </section>
 
-        </main>
-        <footer>
-            <div class="copyright">
-                <p class="copyright-texto">&copy; Copyright RHT - 2021</p>
-            </div>  
-        </footer>
-        <script src="./jscript/suavizar-scroll.js"></script>
-    </body>
+
+
+        <!-- End sobre area -->
+
+        <!-- Start habilidades area -->
+        <section class="habilidade-area" id="habilidade-area">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-12 text-center habilidade-title">
+                        <h1 class="text-uppercase title-text">Habilidades</h1>
+                        <p class="para text-center">
+                            Algumas habilidades adquiridas ao longo de cursos e da minha formação:
+                        </p>
+
+                    </div>
+
+
+                </div>
+                <div class="container habilidade-list">
+                    <div class="row">
+                        <div class="col-lg-3 col-md6 col-sm-12">
+                            <div class="habilidades">
+                                <div class="habilidades-img text-center py-4">
+                                    <img src="./img/preview.svg" alt="" width=35%>
+                                </div>
+                                <div class="card-body text-center">
+                                    <h5 class="card-title text-uppercase font-roboto">Linguagens</h5>
+                                    <ul class="list-group font-roboto">
+                                        <li class="list-group-item">C / C++ / C#</li>
+                                        <li class="list-group-item">Java</li>
+                                        <li class="list-group-item">Python</li>
+                                        <li class="list-group-item">Html / CSS / JavaScript (React)</li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-3 col-md6 col-sm-12">
+                            <div class="habilidades">
+                                <div class="habilidades-img text-center py-4">
+                                    <img src="./img/framework.png" alt="" width=35%>
+                                </div>
+                                <div class="card-body text-center">
+                                    <h5 class="card-title text-uppercase font-roboto">Frameworks</h5>
+                                    <ul class="list-group font-roboto">
+                                        <li class="list-group-item">Spring / Hibernate / Maven</li>
+                                        <li class="list-group-item">ASP .NET</li>
+                                        <li class="list-group-item">Bootstrap</li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-3 col-md6 col-sm-12">
+                            <div class="habilidades">
+                                <div class="habilidades-img text-center py-4">
+                                    <img src="./img/database.svg" alt="" width=35%>
+                                </div>
+                                <div class="card-body text-center">
+                                    <h5 class="card-title text-uppercase font-roboto">Banco de Dados</h5>
+                                    <ul class="list-group font-roboto">
+                                        <li class="list-group-item">MySQL</li>
+                                        <li class="list-group-item">H2</li>
+                                        <li class="list-group-item">PostgreSQL</li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-3 col-md6 col-sm-12">
+                            <div class="habilidades">
+                                <div class="habilidades-img text-center py-4">
+                                    <img src="./img/others..png" alt="" width=35%>
+                                </div>
+                                <div class="card-body text-center">
+                                    <h5 class="card-title text-uppercase font-roboto">Outros</h5>
+                                    <ul class="list-group font-roboto">
+                                        <li class="list-group-item">Versionamento Git</li>
+                                        <li class="list-group-item">API's REST</li>
+                                        <li class="list-group-item">Pacote Office</li>
+                                        <li class="list-group-item">Inglês avançado</li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- end habilidades area -->
+
+        <!-- Start Experiencia area-->
+
+        <section class="experiencia-area" id="experiencia-area">
+            <div class="container-fluid">
+                <div class="row">
+                    <div class="col-lg-6 col-md-12 experiencia-titulo">
+                        <h2 class="text-uppercase title-text">
+                            <span>Experiências</span>
+                        </h2>
+                        <div class="paragraph py-4 w-75">
+                            <p class="para">
+                                No momento não tive nenhuma experiência no mercado, <b>mas estou buscando por isso!</b>
+                            </p>
+                        </div>
+                    </div>
+                    <div class="col-lg-6 col-md-12">
+                        <div class="experiencia-image">
+                            <img src="./img/manutencao.png" alt="manutencao" class="img-fluid">
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+
+        <!-- end Experiencia area-->
+    </main>
+    <!-- End Main area-->
+
+    <footer class="footer-area" id="contato">
+        <div class="container">
+            <div class="site-logo text-center py-4">
+                <a href="#"><img src="./img/RHT Logotipo.png" alt="logo"></a>
+            </div>
+        </div>
+        <div class="social text-center">    
+            <h5 class="text-uppercase">Contato</h5>
+            <a href="https://www.linkedin.com/in/rodrigo-hisashi-takeuti-29a900193/"  target="_blank"><i class="fab fa-linkedin-in"></i></a>
+            <a href="https://github.com/rodrigohisashi" target="_blank"><i class="fab fa-github"></i></a>
+            <a href="mailto:rodrigohisa@gmail.com" target="_blank"><i class="fab fa-google"></i></a>
+
+        </div>
+        <div class="copyrights text-center">
+            <p class="para text-center">
+                Copyright© 2021 - All rights reserved RHT / Template inspired by DailyTuition
+            </p>
+        </div>  
+
+    </footer>
+
+    <script src="./jscript/autobirth.js"></script>
+    <script src="./jscript/jquery.3.6.0js"></script>
+    <script src="./jscript/bootstrap.min.js"></script>
+</body>
 
 </html>
