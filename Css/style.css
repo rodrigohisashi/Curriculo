@@ -1,10 +1,10 @@
-/* Imports fonts  1 08 37*/
+/* Imports fonts */
 
-@import url(fonts.css);
+@import url(./fonts.css);
 
-@import url(partials/_variables.css);
+@import url(./partials/_variables.css);
 
-@import url(partials/_global.css);
+@import url(./partials/_global.css);
 
 /* começo da navigation */
 .header_area .navbar .navbar-brand  {
