@@ -1,0 +1,22 @@
+@media only screen and (max-width: 400px) {
+
+
+    
+    .header_area .navbar, 
+    .header_area .navbar .navbar-brand  {
+        padding: 2%;
+        margin: 0%;
+    }
+
+    
+    .site-main .site-banner .site-title h1{
+
+        font-size: 41px;
+    }
+
+    
+    .site-main > .habilidade-area .habilidades{
+        width: 13rem;
+    }
+    
+}
